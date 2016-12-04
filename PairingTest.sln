@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9DEA172E-A766-4E84-B864-28E8C0D4ADAD}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PairingTest.Unit.Tests", "PairingTest.Unit.Tests\PairingTest.Unit.Tests.csproj", "{F32D3BDC-6A3C-4D1C-B8DF-09F5ADFC33E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionServiceWebApi", "QuestionServiceWebApi\QuestionServiceWebApi.csproj", "{4D222FA3-1BB6-46FE-9AA0-D97FB4A92DB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PairingTest.Application", "PairingTest.Application\PairingTest.Application.csproj", "{15E76AD4-D020-48E4-ACC1-73E57EE4237D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{4D222FA3-1BB6-46FE-9AA0-D97FB4A92DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D222FA3-1BB6-46FE-9AA0-D97FB4A92DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D222FA3-1BB6-46FE-9AA0-D97FB4A92DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E76AD4-D020-48E4-ACC1-73E57EE4237D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E76AD4-D020-48E4-ACC1-73E57EE4237D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E76AD4-D020-48E4-ACC1-73E57EE4237D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E76AD4-D020-48E4-ACC1-73E57EE4237D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

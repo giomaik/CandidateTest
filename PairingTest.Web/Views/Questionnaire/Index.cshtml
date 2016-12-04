@@ -1,10 +1,25 @@
 ﻿@model PairingTest.Web.Models.QuestionnaireViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = @Model.QuestionnaireTitle;
+}
 
-<html>
-    <head>
-        <title>@Model.QuestionnaireTitle</title>
-    </head>
-    <body>
-              
-    </body>
-</html>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-offset-3
+                    col-md-8 col-md-offset-2
+                    col-sm-10 col-sm-offset-1
+                    col-xs-12 col-xs-offset-0">
+                <h2 class="page-header">@Model.QuestionnaireTitle</h2>
+                <form>
+                @foreach (var question in Model.QuestionsText.Select((q, i) => new { text = q, index = i }))
+                {
+                    <div class="form-group">
+                        @Html.Label(question.text, new { @for = "question" + question.index })
+                        @Html.TextBox("question" + question.index, "", new { @class = "form-control" })
+                    </div>
+                }
+                </form>
+        </div>
+    </div>
+</div>

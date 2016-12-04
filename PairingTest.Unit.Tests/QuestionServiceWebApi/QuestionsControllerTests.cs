@@ -13,8 +13,8 @@ namespace PairingTest.Unit.Tests.QuestionServiceWebApi
         {
             //Arrange
             var expectedTitle = "My expected questions";
-            var expectedQuestions = new Questionnaire() {QuestionnaireTitle = expectedTitle};
-            var fakeQuestionRepository = new FakeQuestionRepository() {ExpectedQuestions = expectedQuestions};
+            var expectedQuestions = new Questionnaire() { QuestionnaireTitle = expectedTitle };
+            var fakeQuestionRepository = new FakeQuestionRepository() { ExpectedQuestions = expectedQuestions };
             var questionsController = new QuestionsController(fakeQuestionRepository);
 
             //Act

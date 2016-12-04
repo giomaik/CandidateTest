@@ -1,0 +1,13 @@
+﻿@model Exception
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Error";
+}
+
+<div class="container">
+    <h4>Error</h4>
+    <p class="alert alert-danger">
+        @Model.Message
+    </p>
+</div>
